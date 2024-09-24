@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer Management System (DMS)</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar (common for all pages) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="dashboard.html">
+            <!-- Add your company logo here -->
+            <img src="logo.png" alt="Company Logo"  height="40" class="d-inline-block align-top">
+            DMS
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orders.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="billing.html">Billing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">Dealer Onboarding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lead-management.html">Lead Management</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Inventory Management</h2>
+        <form id="inventoryForm">
+            <div class="form-group">
+                <label for="product">Product</label>
+                <input type="text" class="form-control" id="product" placeholder="Enter product name" required>
+            </div>
+            <div class="form-group">
+                <label for="stock">Stock Level</label>
+                <input type="number" class="form-control" id="stock" placeholder="Enter stock level" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Stock</button>
+        </form>
+    </div>
+    
+
+  
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">&copy; Escorts Kubota Ltd. <br> 2024 Dealer Management System</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
